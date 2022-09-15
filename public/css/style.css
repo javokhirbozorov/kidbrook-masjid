@@ -1,0 +1,61 @@
+.prayer-begins{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.prayer-begins li{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav {
+    color: white;
+}
+
+
+.long-news-tile{
+    /* height: 250px; */
+    margin-bottom: 10px;
+}
+
+.short-news-tile{
+    /* height: 250px; */
+}
+
+.news-tiles{
+
+}
+
+
+.latestNews{
+    margin-top: 70px;
+}
+
+.other-amount{
+width: 300px;
+margin: 10px;
+}
+
+.quick-donation{
+    margin-top: 70px;
+}
+
+.quick-donation .container{
+    display: flex;
+    justify-content: center;
+}
+.quick-donation form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin-top: 40px;
+}
+
+
+
+
+/* Player */
+
