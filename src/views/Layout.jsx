@@ -4,7 +4,7 @@ function Layout({ title, children }) {
   return (
     <html lang="en">
       <head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <!-- CSS only --> */}
@@ -15,6 +15,8 @@ function Layout({ title, children }) {
         {/* custom */}
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/miniPlayerStyle.css" />
+        <link rel="stylesheet" href="css/posts-style.css" />
+        <script defer src="js/clientPost.js" />
         <script defer src="js/client.js" />
 
         <title>{title}</title>
@@ -34,7 +36,7 @@ function Layout({ title, children }) {
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Posts</a>
+                    <a className="nav-link" href="/posts">Posts</a>
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">

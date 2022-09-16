@@ -11,10 +11,11 @@ app.use(express.json());
 
 // route import
 const homeRoute = require('./src/routes/homeRoute');
-
+const postsRoute = require('./src/routes/postsRoute');
 // routing
 
 app.use('/', homeRoute);
+app.use('/posts', postsRoute);
 
 app.listen(PORT, () => {
   console.log('Server has started on port:', PORT);

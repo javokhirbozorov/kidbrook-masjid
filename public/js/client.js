@@ -95,10 +95,14 @@ const getSurah = async () => {
   const res = await response.json();
   console.log(res);
   const ayah = res.data.ayahs[1].audio;
+  const reciter = res.data.edition.englishName;
+  const ayahName = res.data.englishName;
 
   const audio = document.querySelector('#myAudio');
   const playBtn = document.querySelector('#play');
   const audioSrc = document.querySelector('#audioSrc');
+  const artist = document.querySelector('.artist');
+  const name = document.querySelector('.name');
   let count = 0;
 
   const playPause = () => {
@@ -115,7 +119,8 @@ const getSurah = async () => {
     // console.log(audioSrc.attributes);
     // console.log(ayah);
     audioSrc.src = ayah;
-    console.log(audioSrc);
+    artist.innerHTML = reciter;
+    name.innerHTML = ayahName;
     playPause();
     // playPause();
   });

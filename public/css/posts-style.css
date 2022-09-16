@@ -1,0 +1,20 @@
+#postForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#postForm * {
+  margin: 7px;
+}
+#postForm button {
+  margin: auto;
+  width: 200px;
+}
+
+.postCard {
+  padding: 0;
+}
+
+.card-img-top {
+  max-height: 250px;
+}/*# sourceMappingURL=posts-style.css.map */
